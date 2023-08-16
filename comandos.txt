@@ -1,0 +1,125 @@
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ git add .
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ git commit -m "primer commit"
+[main (root-commit) 4582e1f] primer commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ git branch feature
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ mkadir Hardware Software Seguridadinformatica
+bash: mkadir: command not found
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ mkdir Hardware Software Seguridadinformatica
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ cd Hardware
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos/Hardware (feature)
+$ touch resume.txt
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos/Hardware (feature)
+$ cd ..
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ cd Software
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos/Software (feature)
+$ touch resume.txt
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos/Software (feature)
+$ cd ..
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ cd Seguridadinformatica
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos/Seguridadinformatica (feature)
+$ touch resume.txt
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos/Seguridadinformatica (feature)
+$ cd ..
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ git status
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hardware/
+        Seguridadinformatica/
+        Software/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ git add .
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ git commit -m "rama feature"
+[feature a18c472] rama feature
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resume.txt
+ create mode 100644 Seguridadinformatica/resume.txt
+ create mode 100644 Software/resume.txt
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ git push feature
+fatal: 'feature' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ git push origin feature
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 562 bytes | 562.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/gonzaloMartos/16-08-23-GonzaloMartos.git
+ * [new branch]      feature -> feature
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ ls
+index.html  main.js
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ mv main.js resumenHardware.txt
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ ls
+index.html  resumenHardware.txt
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ mv index.html resumenSoftware.txt
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ ls
+resumenHardware.txt  resumenSoftware.txt
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ touch comandos.txt
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$ ^C
+
+Gonza@DESKTOP-0M10IR7 MINGW64 /d/Gonza/Escritorio/16-08-23-Gonzalo Martos/16-08-23-GonzaloMartos (main)
+$
